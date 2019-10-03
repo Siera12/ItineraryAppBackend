@@ -23,8 +23,8 @@ public class User {
     private String deletedBy;
     private Date deletedDate;
     
-    @OneToOne(cascade=CascadeType.MERGE)
-    private Role roleId;
+    @OneToOne(cascade=CascadeType.ALL,mappedBy="roleId")
+    private Role role;
     
 	public int getUserId() {
 		return userId;
@@ -116,14 +116,16 @@ public class User {
 	}
 
 
-	public Role getRoleId() {
-		return roleId;
+	public Role getRole() {
+		return role;
 	}
 
 
-	public void setRoleId(Role roleId) {
-		this.roleId = roleId;
+	public void setRole(Role role) {
+		this.role = role;
 	}
-    
+
+
+	
 	
 }
