@@ -3,6 +3,7 @@ package com.iris.entity;
 import java.util.Date;
 
 import javax.persistence.CascadeType;
+import javax.persistence.Column;
 import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;
 import javax.persistence.Id;
@@ -13,17 +14,32 @@ public class User {
 	
 	@Id
     @GeneratedValue
+    
     private int userId;
+	
     private String username;
+    
     private String password;
+    
+    
     private Date createdDate;
+    
+    
     private String createdBy;
+    
+    
     private Date modifiedDate;
+    
+    
     private String modifiedBy;
+    
+    
     private String deletedBy;
+    
+   
     private Date deletedDate;
     
-    @OneToOne(cascade=CascadeType.ALL,mappedBy="roleId")
+    @OneToOne(cascade=CascadeType.PERSIST)
     private Role role;
     
 	public int getUserId() {

@@ -26,7 +26,7 @@ public class Client {
 	
 	private Date deptDate;
 	
-	 @OneToOne(cascade=CascadeType.ALL,mappedBy="statusId")
+	@OneToOne(cascade=CascadeType.PERSIST)
 	private Status status;
 
 	public int getClientId() {
@@ -83,6 +83,14 @@ public class Client {
 
 	public void setDeptDate(Date deptDate) {
 		this.deptDate = deptDate;
+	}
+
+	public Status getStatus() {
+		return status;
+	}
+
+	public void setStatus(Status status) {
+		this.status = status;
 	}
 	
 	
