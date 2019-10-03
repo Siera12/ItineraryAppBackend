@@ -2,9 +2,11 @@ package com.iris.entity;
 
 import java.util.Date;
 
+import javax.persistence.CascadeType;
 import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;
 import javax.persistence.Id;
+import javax.persistence.OneToOne;
 
 @Entity
 public class Client {
@@ -23,6 +25,9 @@ public class Client {
 	private Date arrvDate;
 	
 	private Date deptDate;
+	
+	 @OneToOne(cascade=CascadeType.ALL,mappedBy="statusId")
+	private Status status;
 
 	public int getClientId() {
 		return clientId;
