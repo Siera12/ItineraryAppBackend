@@ -12,6 +12,7 @@ public class Role {
     @GeneratedValue
     private int roleId;
     private String roleName;
+    
       
 	public int getRoleId() {
 		return roleId;
