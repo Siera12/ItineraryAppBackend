@@ -12,10 +12,7 @@ public class Role {
     @GeneratedValue
     private int roleId;
     private String roleName;
-    
-    @OneToOne
-    private User user;
-    
+      
 	public int getRoleId() {
 		return roleId;
 	}
