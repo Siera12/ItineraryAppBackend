@@ -6,39 +6,37 @@ import org.springframework.stereotype.Service;
 
 import com.iris.entity.Client;
 import com.iris.entity.User;
+import com.iris.entity.UserHistory;
 
 @Service
-public class UserHistoryServiceImpl implements UserService{
+public class UserHistoryServiceImpl implements UserHistoryService{
 
 	@Override
-	public boolean addNewUser(User c) {
+	public boolean addNewUserHistory(UserHistory c) {
 		// TODO Auto-generated method stub
 		return false;
 	}
 
 	@Override
-	public boolean updateUser(User c) {
+	public boolean deleteUserHistory(UserHistory c) {
 		// TODO Auto-generated method stub
 		return false;
 	}
 
 	@Override
-	public boolean deleteUser(User c) {
-		// TODO Auto-generated method stub
-		return false;
-	}
-
-	@Override
-	public User viewUserById(int id) {
+	public UserHistory viewUserHistoryById(int id) {
 		// TODO Auto-generated method stub
 		return null;
 	}
 
 	@Override
-	public List<User> viewAllUser() {
+	public List<UserHistory> viewAllUserHistory() {
 		// TODO Auto-generated method stub
 		return null;
 	}
+
+	
+
 
 	
 	
