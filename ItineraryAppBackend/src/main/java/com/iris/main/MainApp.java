@@ -11,7 +11,7 @@ import org.springframework.transaction.annotation.EnableTransactionManagement;
 @EntityScan("com.iris.entity")
 @EnableTransactionManagement
 @EnableJpaRepositories(basePackages= {"com.iris.repository"})
-@ComponentScan({"com.iris,controllers","com.iris.service","com.iris.Daos"})
+@ComponentScan({"com.iris,controller","com.iris.service"})
 public class MainApp {
 
 
