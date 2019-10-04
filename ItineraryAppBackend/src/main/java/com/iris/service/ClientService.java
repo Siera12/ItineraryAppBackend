@@ -17,6 +17,6 @@ public interface ClientService {
  
  public Client viewClientById(int id);
  
- public List<Client> viewAllClients(int id);
+ public List<Client> viewAllClients();
 
 }

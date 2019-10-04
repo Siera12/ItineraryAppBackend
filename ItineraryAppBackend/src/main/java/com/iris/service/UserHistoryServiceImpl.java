@@ -7,10 +7,13 @@ import org.springframework.stereotype.Service;
 
 import com.iris.entity.User;
 import com.iris.entity.UserHistory;
+
 import com.iris.repository.UserHistoryRepository;
+
 
 @Service
 public class UserHistoryServiceImpl implements UserHistoryService{
+
 
 	
 	@Autowired
@@ -29,10 +32,18 @@ public class UserHistoryServiceImpl implements UserHistoryService{
 		}
 		catch(Exception e) {e.printStackTrace();}
 		
+
+
+
+	@Override
+	public boolean deleteUserHistory(UserHistory c) {
+		// TODO Auto-generated method stub
+
 		return false;
 	}
 
 	@Override
+
 	public boolean deleteUserHistory(UserHistory c) {
 		
 		try {
@@ -58,11 +69,12 @@ public class UserHistoryServiceImpl implements UserHistoryService{
 		}
 		catch(Exception e) {e.printStackTrace();}
 		
-		return null;
+
 	}
 
 	@Override
 	public List<UserHistory> viewAllUserHistory() {
+
 
 		try {
 					
@@ -71,10 +83,14 @@ public class UserHistoryServiceImpl implements UserHistoryService{
 		}
 		catch(Exception e) {e.printStackTrace();}
 		
-		return null;
+
+		
 	}
 	
 	
+	
+
+
 	
 	
 	
